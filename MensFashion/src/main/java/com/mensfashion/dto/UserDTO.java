@@ -14,7 +14,7 @@ public class UserDTO {
 	private String name;
 	private String email;
 	private String password;
-	private BigDecimal phoneNum;
+	private long phoneNum;
 	
 	@Override
 	public String toString() {
