@@ -21,5 +21,4 @@ public class UserDTO {
 		return "UserDTO [name=" + name + ", email=" + email + ", password=" + password + ", phoneNum=" + phoneNum + "]";
 	}
 	
-	
 }
