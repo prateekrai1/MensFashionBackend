@@ -1,6 +1,7 @@
 package com.mensfashion.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,5 +13,8 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class CareGuide {
-
+	
+	@ManyToOne
+	private ProductEntity product;
+	private String desc;
 }

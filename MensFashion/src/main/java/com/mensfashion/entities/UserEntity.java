@@ -1,6 +1,5 @@
 package com.mensfashion.entities;
 
-import java.math.BigDecimal;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
