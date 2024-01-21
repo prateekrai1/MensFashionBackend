@@ -10,7 +10,7 @@ import lombok.Setter;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Category")
+@Table(name="categories")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -19,8 +19,8 @@ public class CategoryEntity {
 	@GeneratedValue (strategy = GenerationType.AUTO)
 	private int category_id;
 	
-	private String category_title;
-	private String category_desc;
+	private String categoryTitle;
+	private String categoryDesc;
 	
 	@OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
 	private Set<ProductEntity> product = new HashSet<>();

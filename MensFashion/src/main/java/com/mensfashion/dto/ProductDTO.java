@@ -3,29 +3,23 @@ package com.mensfashion.dto;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.mensfashion.entities.CareGuide;
-import com.mensfashion.entities.ColorsEntity;
-import com.mensfashion.entities.DescriptionAndFitEntity;
-import com.mensfashion.entities.MaterialEntity;
-import com.mensfashion.entities.SizeEntity;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-
+@Getter
+@Setter
+@NoArgsConstructor
 public class ProductDTO {
-	private int productid;
 	private String title;
+	private String desc;
 	private float price;
+	private String Color;
+	private String Size;
 	private int discount;
+	private int quantity;
+	private String image;
 	private float discountPrice;
-	
 	private CategoryDTO category;
 	
-	private Set<ColorsEntity> colors = new HashSet<>();
-
-	private Set<SizeEntity> sizes = new HashSet<>();
-	
-	private Set<DescriptionAndFitEntity> descnFit = new HashSet<>();
-	
-	private Set<MaterialEntity>material = new HashSet<>();
-	
-	private Set<CareGuide> care = new HashSet<>();
 }
