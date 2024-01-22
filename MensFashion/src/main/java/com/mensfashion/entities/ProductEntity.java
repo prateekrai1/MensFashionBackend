@@ -23,7 +23,7 @@ public class ProductEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String title;
-	private String desc;
+	private String description;
 	private float price;
 	private String Color;
 	private String Size;
